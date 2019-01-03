@@ -25,4 +25,16 @@ $(document).ready(() => {
     function onError(error){
         console.log(error);
       }
+
+
+    $.ajax({
+        method: 'POST',
+        url: 'http://localhost:3000/api/foods',
+        success: PostSuccess,
+        error: PostError
+    });
+    function PostSuccess() {
+        
+    }
 });
+
